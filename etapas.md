@@ -5,7 +5,7 @@
    * Habilitar KVM
    * Snap
      * Ubuntu-image
-   * ssh
+   * SSH
    * Ubuntu Core - img.xz
    * clone gadget
 
@@ -25,5 +25,5 @@
    * snapcraft in gadget
    * ubuntu-image com snap criado
    * qemu com a imagem criada
-   * login por ssh
+   * login por SSH
   
