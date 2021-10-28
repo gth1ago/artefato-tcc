@@ -1,7 +1,15 @@
-# Generic x86 / KVM - ubuntu-core-20
-# Full x86 32/64 bit CPU virtualisation 
+## Descrições dos modelos seguidos para elaborações
 
-wget http://cdimage.ubuntu.com/ubuntu-core/20/stable/current/ubuntu-core-20-amd64.img.xz
+
+[Etapas e definições do caminho em /Etapas](./etapas.md)**
+
+--------------------
+Ainda em construção: 
+
+### Generic x86 / KVM - ubuntu-core-20
+### Full x86 32/64 bit CPU virtualisation 
+
+wget https://cdimage.ubuntu.com/ubuntu-core/20/stable/current/ubuntu-core-20-amd64.img.xz
 
 # Next step: Install
 # https://ubuntu.com/download/kvm
@@ -63,7 +71,7 @@ $ snap model --assertion
 $ snap model --serial
 
 # -----------------------------------------------------------------
-
+date -Iseconds --utc
 # Modif
 
 unxz ubuntu-core-*
@@ -101,9 +109,15 @@ cat my-model.json | snap sign -k my-key-name > my-model.model
 
 sudo snap install ubuntu-image --beta --classic
 
+# In gadget
+snapcrapft '
+
+# Para criar a Imagem
 ubuntu-image snap my-model.model
 
 # The ubuntu-image command will now build an image using locally sourced and built snaps, 
 #   such as a custom gadget snap:
 
 ubuntu-image snap my-model.model --snap ./pc_20-0.4_amd64.snap
+
+
