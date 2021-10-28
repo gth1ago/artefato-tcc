@@ -4,6 +4,6 @@
 
 
    * Descomprimir img.xz
-      ```
+      ```bash
       $ unxz ubuntu-core-20-amd64.img.xz
       ``` 
