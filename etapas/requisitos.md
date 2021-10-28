@@ -1,22 +1,22 @@
 **1. Requisitos**
    * **QEMU**
-      ``` bash
+      ~~~ bash
       $ sudo apt-get update
       $ sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virtinst virt-manager
-      ``` 
+      ~~~ 
       Adicione seu user ao grupo kvm e libvirt
-      ``` bash
+      ~~~ bash
       $ sudo usermod -aG libvirt $USER
       $ sudo usermod -aG kvm $USER
-      ``` 
+      ~~~ 
       Verificar se o daemon libvirt foi iniciado
-      ``` bash
+      ~~~ bash
       sudo systemctl is-active libvirtd
-      ``` 
+      ~~~ 
       Caso não:
-      ``` bash
+      ~~~ bash
       $ sudo systemctl enable --now libvirtd
-      ``` 
+      ~~~ 
 
       Talvez seja necessário reiniciar a máquina
 <br/>
@@ -25,42 +25,42 @@
       - Habilitação do KVM
       - Primeiro verifique se seu processador possui capacidade para esta virtualização
       - `vmx` em Intel e `sxm` para AMD em `/proc/cpuinfo`:
-      ```bash
+      ~~~bash
       $ sudo grep -cE 'vmx|svm' /proc/cpuinfo
-      ```
+      ~~~
       Habilitando e verificando se está tudo ok:
-      ```bash
+      ~~~bash
       $ sudo modprobe kvm
       $ sudo kvm-ok
-      ```
+      ~~~
       Caso possui suporte e não esteja habilitado deve-se entrar na BIOS para habilitar!
 <br/>
       
    * **Snap**
-      ```bash
+      ~~~bash
       $ sudo apt install snapd
-      ```
+      ~~~
      * Ubuntu-image
-      ```bash
+      ~~~bash
       $ sudo snap install ubuntu-image --beta --classic
-      ```
+      ~~~
 <br/>
 
    * **SSH**
-      ```bash
+      ~~~bash
       $ sudo apt-get install SSH openssh-server
-      ```
+      ~~~
 <br/>
 
    * **Ubuntu Core** - img.xz
-      ```bash
+      ~~~bash
       $ wget https://cdimage.ubuntu.com/ubuntu-core/20/stable/current/ubuntu-core-20-amd64.img.xz
-      ```
+      ~~~
 <br/>
 
    * **Gadget** amd64
-      ```bash
+      ~~~bash
       $ sudo apt install git
       $ git clone https://github.com/snapcore/pc-amd64-gadget.git
-      ```
+      ~~~
 

@@ -4,26 +4,33 @@
      ~~~bash
      $ snapcraft 
      ~~~ 
-     Com isso é criado um .snap na pasta atual.
+     Com isso é criado um `.snap` na pasta atual.
 
      Caso ocorrar erros, verifique-se:
-      - se há espaço para instalações (`$ dh -f`)
+      - se há espaço para instalações 
+      ~~~bash 
+         $ df -H
+      ~~~
       - se possui permissão com o usuário atual para usar
         - snap
         - multipass
+      - Limpe o snapcraft com:
+      ~~~bash
+         $ snapcraft clean 
+      ~~~ 
 <br/>
 
    * **ubuntu-image com snap criado**\
     Criação da Imagem com o `.snap` e `.model` criado:
-      ``` bash
+      ~~~ bash
       $ ubuntu-image snap my-model.model --snap ./pc_20-0.4_amd64.snap
-      ``` 
+      ~~~ 
       Com isso fora criado um `.img` sendo a imagem já modificada.
 <br/>
 
    * **qemu com a imagem criada**\
     Para emulação com QEMU das imagens:
-      ``` bash
+      ~~~ bash
       $ sudo qemu-system-x86_64                                     \
          -smp 2                                                     \
          -m 2048                                                    \
@@ -32,14 +39,14 @@
          -drive file=pc.img,cache=none,format=raw,id=disk1,if=none  \
          -device virtio-blk-pci,drive=disk1,bootindex=1             \
          -machine accel=kvm 
-      ``` 
+      ~~~ 
       em `-drive file <name.img>` deve-se referenciar a imagem que deseja, pode-se realizar com a .img original e a modificada (sem as mitigações).
 <br/>
 
    * **login por ssh**\
     Após a execução e definição da conta no primeiro acesso, será logado e ofertado o acesso por ssh, em outro terminal então, acesse com:
    
-      ```bash
+      ~~~bash
       $ ssh -p 8022 <username>@localhost
-      ```
+      ~~~
   
