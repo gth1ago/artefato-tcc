@@ -6,7 +6,7 @@
      ~~~ 
      Com isso é criado um `.snap` na pasta atual.
 
-     Caso ocorrar erros, verifique-se:
+     Caso ocorra erros, verifique-se:
       - se há espaço para instalações 
       ~~~bash 
          $ df -H
@@ -23,9 +23,10 @@
    * **ubuntu-image com snap criado**\
     Criação da Imagem com o `.snap` e `.model` criado:
       ~~~ bash
+      # ubuntu-image snap <name.model> --snap ./<name>.snap
       $ ubuntu-image snap my-model.model --snap ./pc_20-0.4_amd64.snap
       ~~~ 
-      Com isso fora criado um `.img` sendo a imagem já modificada.
+      Com isso fora criado um `.img` sendo a Imagem já modificada.
 <br/>
 
    * **qemu com a imagem criada**\
@@ -47,6 +48,7 @@
     Após a execução e definição da conta no primeiro acesso, será logado e ofertado o acesso por ssh, em outro terminal então, acesse com:
    
       ~~~bash
-      $ ssh -p 8022 <username>@localhost
+      # ssh -p <porta> <user>@localhost
+      $ ssh -p 8022 gth1ago@localhost
       ~~~
   
