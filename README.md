@@ -1,7 +1,7 @@
 ## Descrições dos modelos seguidos para elaborações
 
 
-Acesse as [Etapas e definições do caminho](./etapas.md)
+Acesse as [Etapas e definições do caminho](./etapas/etapas.md)
 
 --------------------
 
