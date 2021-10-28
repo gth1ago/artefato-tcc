@@ -1,11 +1,13 @@
 ## Descrições dos modelos seguidos para elaborações
 
 
-[Etapas e definições do caminho em /Etapas](./etapas.md)**
+Acesse as [Etapas e definições do caminho](./etapas.md)
 
 --------------------
-Ainda em construção: 
 
+> README ainda em construção
+
+<!---
 ### Generic x86 / KVM - ubuntu-core-20
 ### Full x86 32/64 bit CPU virtualisation 
 
@@ -119,5 +121,6 @@ ubuntu-image snap my-model.model
 #   such as a custom gadget snap:
 
 ubuntu-image snap my-model.model --snap ./pc_20-0.4_amd64.snap
+-->
 
 
