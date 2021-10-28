@@ -40,7 +40,8 @@
       No gadget, para passagem de parâmetros ao kernel na inicialização deve-se usar os gadget e definir um novo arquivo cmdline.extra com os parâmetros e definir no .yarn a sua adição.
 
       ~~~bash
-      $ echo "mitigations=off" > ./<caminho>/cmdline.extra
+      # echo "parametro que deseja> > ./<caminho do gadget>/cmdline.extra
+      $ echo "mitigations=off" > ./cmdline.extra
       ~~~
       - Em `gadget.yaml` adicione as seguintes linhas na sessão do grub, abaixo do `- grub-common`:
       ~~~yaml
