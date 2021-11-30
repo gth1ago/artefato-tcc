@@ -32,6 +32,7 @@
       Habilitando e verificando se está tudo ok:
       ~~~bash
       $ sudo modprobe kvm
+      $ sudo apt-get install cpu-checker # para o kvm-ok
       $ sudo kvm-ok
       ~~~
       Caso possui suporte e não esteja habilitado deve-se entrar na BIOS para habilitar!
