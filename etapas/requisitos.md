@@ -24,6 +24,7 @@
    * **KVM (Kernel Virtual Machine)**
       - Habilitação do KVM
       - Primeiro verifique se seu processador possui capacidade para esta virtualização
+      - Caso o valor de retorno for diferente de 0, possui suporte
       - `vmx` em Intel e `sxm` para AMD em `/proc/cpuinfo`:
       ~~~bash
       $ sudo grep -cE 'vmx|svm' /proc/cpuinfo
