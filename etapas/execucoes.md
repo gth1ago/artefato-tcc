@@ -73,3 +73,5 @@
       $ ssh -p 8022 gth1ago@localhost
       ~~~
   
+  Continua com a [pós instalação](./posInstall.md)
+
