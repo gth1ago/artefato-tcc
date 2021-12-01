@@ -4,7 +4,7 @@
      ~~~bash
      $ snapcraft 
      ~~~ 
-     Utilize do "y" após executar para download e uso do gerenciador "Multipass"
+     Utilize do "y" após executar para download e uso do gerenciador "Multipass".
      
      Com isso é criado um `.snap` na pasta atual.
 
@@ -16,14 +16,22 @@
       - se possui permissão com o usuário atual para usar
         - snap
         - multipass
+        ~~~bash
+        $ sudo chmod a+w /var/snap/multipass/common/multipass_socket
+        ~~~
       - Limpe o snapcraft com:
       ~~~bash
          $ snapcraft clean 
       ~~~ 
+      
+      Com a execução finalizada com sucesso, tera criado o .snap desejado
 <br/>
 
-   * **ubuntu-image com snap criado**\
-    Criação da Imagem com o `.snap` e `.model` criado:
+   * **ubuntu-image com snap criado**
+   
+      ubuntu-image é uma ferramenta utilizada para a criação de imagens pré-instaladas do Ubuntu, tanto clássicas quanto baseadas em snap o qual é o nosso caso.
+   
+      Criação da Imagem com o `.snap` e `.model` criado:
       ~~~ bash
       # ubuntu-image snap <name.model> --snap ./<name>.snap
       $ ubuntu-image snap my-model.model --snap ./pc_20-0.4_amd64.snap
