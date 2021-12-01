@@ -2,14 +2,14 @@
    * **Criação do .json**
 <br/>
 
-   * **snap login**\
+   * **snapcraft login**\
       Pelo terminal, faça o login com a conta criada em [Snapcraft](https://snapcraft.io/account)
       ~~~bash
       $ snap login
       ~~~
 <br/>
 
-   * **snap keys**\
+   * **snapcraft keys**\
       Necessário uma chave para integridade no uso nas imagens 
      - Verifique com:
       ~~~bash
@@ -22,7 +22,7 @@
       ~~~
 <br/>
 
-   * **snap register key**\
+   * **snapcraft register-key**\
       Agora para registrar sua chave a sua conta no Snap
       ~~~bash
       $ snap register key
@@ -43,7 +43,7 @@
       # echo "parametro que deseja> > ./<caminho do gadget>/cmdline.extra
       $ echo "mitigations=off" > ./cmdline.extra
       ~~~
-      - Em `gadget.yaml` adicione as seguintes linhas na sessão do grub, abaixo do `- grub-common`:
+      - Em `snapcraft.yaml` adicione as seguintes linhas na sessão do grub, abaixo do `- grub-common`:
       ~~~yaml
       build-packages:
       - grub-common
