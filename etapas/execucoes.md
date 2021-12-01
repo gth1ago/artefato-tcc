@@ -4,6 +4,8 @@
      ~~~bash
      $ snapcraft 
      ~~~ 
+     Utilize do "y" após executar para download e uso do gerenciador "Multipass"
+     
      Com isso é criado um `.snap` na pasta atual.
 
      Caso ocorra erros, verifique-se:
