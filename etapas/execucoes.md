@@ -32,15 +32,25 @@
       ubuntu-image é uma ferramenta utilizada para a criação de imagens pré-instaladas do Ubuntu, tanto clássicas quanto baseadas em snap o qual é o nosso caso.
    
       Criação da Imagem com o `.snap` e `.model` criado:
+      
       ~~~ bash
       # ubuntu-image snap <name.model> --snap ./<name>.snap
       $ ubuntu-image snap my-model.model --snap ./pc_20-0.4_amd64.snap
       ~~~ 
+      
       Com isso fora criado um `.img` sendo a Imagem já modificada.
+      Pode-se ver informações da imagem com:
+      
+      ~~~ bash
+      $ qemu-img info pc.img
+      # e para redimenciona o tamanho com:
+      $ qemu-img resize pc.img 6G
+      ~~~ 
 <br/>
 
    * **qemu com a imagem criada**\
     Para emulação com QEMU das imagens:
+    
       ~~~ bash
       $ sudo qemu-system-x86_64                                     \
          -smp 2                                                     \
@@ -51,6 +61,7 @@
          -device virtio-blk-pci,drive=disk1,bootindex=1             \
          -machine accel=kvm 
       ~~~ 
+      
       em `-drive file <name.img>` deve-se referenciar a imagem que deseja, pode-se realizar com a .img original e a modificada (sem as mitigações).
 <br/>
 
