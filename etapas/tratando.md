@@ -3,7 +3,8 @@
    Acesse e crie uma [Conta no Snapcraft](https://snapcraft.io/account)
 
 
-   * **Descomprimir img.xz**\
+   * **Descomprimir img.xz**
       ~~~bash
       $ unxz ubuntu-core-20-amd64.img.xz
       ~~~ 
+   Criando então um .img
