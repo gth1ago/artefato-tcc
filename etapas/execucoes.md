@@ -39,7 +39,7 @@
       
       ~~~ bash
       # ubuntu-image snap <name.model> --snap ./<name>.snap
-      $ ubuntu-image snap my-model.model --snap ./pc_20-0.4_amd64.snap
+      $ ubuntu-image snap my-model.model --snap ./pc_20-0.4_amd64.snap -i 10G
       ~~~ 
       
       Com isso fora criado um `.img` sendo a Imagem já modificada.
