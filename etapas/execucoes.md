@@ -19,7 +19,11 @@
         ~~~bash
         $ sudo chmod a+w /var/snap/multipass/common/multipass_socket
         ~~~
-      - Limpe o snapcraft com:
+      - caso erro "An error occurred with the instance when trying to launch with 'multipass'":
+        ~~~bash
+        $ multipass launch
+        ~~~
+      - caso deseje limpar para melhor correção completa, use:
       ~~~bash
          $ snapcraft clean 
       ~~~ 
