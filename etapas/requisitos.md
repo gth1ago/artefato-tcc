@@ -46,6 +46,10 @@
       ~~~bash
       $ sudo snap install ubuntu-image --beta --classic
       ~~~
+     * Multipass
+      ~~~ bash
+      $ sudo snap install multipass
+      ~~~
 <br/>
 
    * **SSH**
