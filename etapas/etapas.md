@@ -6,6 +6,7 @@
    * Snap
      * Ubuntu-image
      * Multipass
+     * Snapcraft
    * SSH
    * Ubuntu Core - img.xz
    * clone gadget
