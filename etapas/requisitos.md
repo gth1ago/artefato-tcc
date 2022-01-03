@@ -50,6 +50,10 @@
       ~~~ bash
       $ sudo snap install multipass
       ~~~
+     * Snapcraft
+      ~~~ bash
+      $ sudo snap install snapcraft --classic
+      ~~~
 <br/>
 
    * **SSH**
