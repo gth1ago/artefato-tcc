@@ -5,6 +5,7 @@
    * Habilitar KVM
    * Snap
      * Ubuntu-image
+     * Multipass
    * SSH
    * Ubuntu Core - img.xz
    * clone gadget
