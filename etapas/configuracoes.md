@@ -1,5 +1,11 @@
 **3. Configurações**
-   * **Criação do .json**
+   * **Criação do .json**\
+      Faça o Download e altere se desejável em [model assertion](https://github.com/gth1ago/artefato-tcc/blob/main/file/model.json)
+      
+      Use do comando para se preencher do timestamp no model assertion
+      ```bash
+      $ date -Iseconds --utc
+      ```
 <br/>
 
    * **snapcraft login**\
