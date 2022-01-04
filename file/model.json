@@ -32,12 +32,6 @@
             "type": "snapd",
             "default-channel": "latest/stable",
             "id": "PMrrV4ml8uWuEUDBT8dSGnKUYbevVhc4"
-        },
-	{
-	    "name": "phoronix-news",
-	    "type": "app",
-	    "default-channel": "latest/stable",
-	    "id": "V7vneOnrdsBs0RAWyxVDi0ZOwwos5xod"
-	}
+        }
     ]
 }
