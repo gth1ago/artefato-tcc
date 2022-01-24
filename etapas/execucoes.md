@@ -46,9 +46,9 @@
       Pode-se ver informações da imagem com:
       
       ~~~ bash
-      $ qemu-img info pc.img
+      $ qemu-img info img1.img
       # e para redimenciona o tamanho com:
-      $ qemu-img resize pc.img 6G
+      $ qemu-img resize img1.img 6G
       ~~~ 
 <br/>
 
