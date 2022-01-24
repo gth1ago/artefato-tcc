@@ -1,0 +1,10 @@
+-----------
+export PATH=/snap/lmbench-snap/current/usr/bin:$PATH
+-----------
+cd /snap/lmbench-snap/current/opt/lmbench
+-----------
+
+MP = default 4154
+no no
+MHZ = default  2378, 0,4205 nanosec clock
+
