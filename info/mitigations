@@ -1,0 +1,14 @@
+mitigations=off = desabilita todas mitigações
+
+nospectre_v1 = desabilita todas as mitigações do spectre v1
+		Com esta opção, vazamentos de dados são possível no sistema.
+
+nospectre_v2 = desabilita todas as mitigações do spectre v2
+		O sistema pode permitir vazamentos de dados com este opção.
+
+spectre_v2_user = off/on = mitigações incondicionalmente
+
+spectre_v2 = off/on = protege o kernel de ataques ao espaço do usuário.
+
+nospec_store_bypass_disable = desabilita todas as mitigações para a vulnerabilidade Speculative Store Bypass
+
