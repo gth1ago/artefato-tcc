@@ -31,7 +31,7 @@
    * **snapcraft register-key**\
       Agora para registrar sua chave a sua conta no Snap
       ~~~bash
-      $ snap register-key
+      $ snapcraft register-key
       ~~~
 <br/>
 
