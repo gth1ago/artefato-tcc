@@ -63,8 +63,13 @@
 <br/>
 
    * **Ubuntu Core** - img.xz
+      AMD:
       ~~~bash
       $ wget https://cdimage.ubuntu.com/ubuntu-core/20/stable/current/ubuntu-core-20-amd64.img.xz
+      ~~~
+      Intel:
+      ~~~bash
+      $ wget https://cdimage.ubuntu.com/ubuntu-core/20/stable/current/ubuntu-core-20-amd64+intel-iot.img.xz
       ~~~
 <br/>
 
