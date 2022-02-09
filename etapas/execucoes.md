@@ -13,6 +13,10 @@
       ~~~bash 
          $ df -H
       ~~~
+      - se o multipass não foi ativado/encontrado
+        ~~~bash
+        sudo snap restart multipass
+        ~~~
       - se possui permissão com o usuário atual para usar
         - snap
         - multipass
@@ -27,7 +31,7 @@
       ~~~bash
          $ snapcraft clean 
       ~~~ 
-      
+      - Caso 
       Com a execução finalizada com sucesso, tera criado o .snap desejado
 <br/>
 
