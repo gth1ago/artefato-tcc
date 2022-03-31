@@ -5,6 +5,8 @@ Acesse as [Etapas e definições do caminho](./etapas/etapas.md) para o desenvol
 
 --------------------
 
+Snap para LmBench = https://github.com/gth1ago/lmbench-snap
+
 > README ainda em construção
 
 <!---
