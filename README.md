@@ -1,7 +1,7 @@
 ## Descrições dos modelos seguidos para elaborações
 
 
-Acesse as [Etapas e definições do caminho](./etapas/etapas.md)
+Acesse as [Etapas e definições do caminho](./etapas/etapas.md) para o desenvolvimento completo do ambiente de execuções
 
 --------------------
 
