@@ -1,38 +1,32 @@
   Após a conexão ssh com
 
   ~~~ bash
+  # ssh -p 8022 <user>@localhost
   $ ssh -p 8022 gth1ago@localhost
   ~~~
   
-  Atualize os pacotes snap com
+  Atualize os pacotes snap (opcional):
   
   ~~~ bash
   $ sudo snap refresh
   ~~~
   
-  Agora iremos instalar ã versão Classic do Snap para maiores possibilidades
-  
-  Detalhe = Versão classic so versão na versao 18 ubuntu core - mesmo com edge ainda há alguns problemas, e com isso por garantia será instalado a versão 16.04
-  porém pode verificar qual desejar com:
+  Agora iremos executar os testes do LMBench com o cenário consstruido do SNAP
   
   ~~~ bash
-  $ sudo snap info classic
+  $ cd /snap/lmbench-snap/current/opt/lmbench
+  $ make
   ~~~
   
-  Instalando com a versão de desenvolvedor:
-  
+  Para verificar os resultados obtivos:
   ~~~ bash
-  $ sudo snap install classic --edge --devmode 
+  sudo cat /home/root/results/*
   ~~~
   
-  Para verificar a instalação temos:
+  Para o Download da pasta através da conexão SSH:
   ~~~ bash
-  sudo snap list classic
+  $ sudo scp <user>@host:/home/root/results/* .
   ~~~
   
-  Para acessar a versão Classic, temos que acessar o seu modo então:
-  ~~~ bash
-  sudo classic
-  ~~~
-  
+  Com isso se tem os testes completos na máquina para análise.
   
