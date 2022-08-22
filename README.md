@@ -11,8 +11,13 @@ Resultados:
 - Notebook 1 = https://docs.google.com/spreadsheets/d/1kUt2G541ST4ELMt_s7ZulfNRRH5M44uyrqE0J4KK4uw/edit?usp=sharing \
 - Notebook 2 = https://docs.google.com/spreadsheets/d/1Vgre3dnROZTwiEIkp0LmRAkew27c0gYMcOMFZNitbdI/edit?usp=sharing \
 - A partir da ferramenta = https://github.com/gth1ago/results_lmbench 
-    
-> README completo em construção
+
+--------------------
+
+#### TCC Final: [Trabalho Spectre - Gabriel](./TCC_Final_Spectre_Gabriel.pdf)
+
+--------------------
+> README detalhado em construção
 
 <!---
 ### Generic x86 / KVM - ubuntu-core-20
